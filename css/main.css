@@ -1,0 +1,424 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color:#F4F4F4;
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main {
+    width: 870px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    width: 270px;
+}
+
+/* Main Cards */
+
+.card_link {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.card_link:hover {
+    transform: translateY(-5px);
+}
+
+.card{
+    position: relative;
+    background-color: #fff;
+    width: 270px;
+    margin-bottom: 30px;
+}
+
+.card_bages {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    left: 15px;
+
+}
+
+.card_bages > * + * {
+    margin-left: 10px;
+    
+}
+
+.card_bage {
+    display: inline-block;
+    background: #FFCF26;
+    border-radius: 4px;
+    height: 22px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: black;
+}
+
+.card_badge > * {
+    vertical-align: middle;
+}
+
+.card_bage_level {
+    background: #FFCF26;
+}
+
+.card_bage_credit {
+    background: #11BE75;
+    color: white;
+}
+
+.card_content {
+    padding: 10px 15px 20px;
+
+}
+
+.card_title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;;
+    color: #000000;
+
+}
+
+.card_term {
+    font-size: 14px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.card_metro {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.card_metro::before {
+    content: '';
+    display: inline-block;
+    vertical-align: baseline;
+    width: 16px;
+    height: 11px;
+    background-image: url('./../img/Vector.svg');
+    background-repeat: no-repeat;
+    background-size: initial;
+    margin-right: 7px;
+}
+
+.card_address {
+    font-size: 14px;
+    line-height: 1.14;
+    color: #777777;
+}
+
+.img_cp {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.show {
+    width: 100%;
+    height: 80px;
+    background: #E5E5E5;
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #4290C9;
+    cursor: pointer;
+    
+}
+
+/* Sidebar */
+
+.widget + .widget{
+    margin-top: 30px;
+}
+
+.widget_title {
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.widget_title::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('./../img/chevron-up.svg');
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: center;
+}
+
+/* Distance */
+
+.distance-group{
+    display: flex;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    overflow: hidden;    
+}
+
+.distance-group:first-child{
+    border-radius: 4px 4px 0px 0px;
+}
+
+.distance-group:last-child{
+    border-radius: 0px 0px 4px 4px;
+    border-top: none;
+}
+
+.distance-btn{
+    font-family: inherit;
+    height: 50px;
+    padding: 17px 15px 17px 15px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3C3C3C;
+    flex-grow: 1;
+    cursor: pointer;    
+}
+
+.distance-btn:hover{
+    background-color: #ffd02681; 
+}
+
+.distance-checkbox {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+}
+
+.distance-checkbox:checked + .distance-btn{
+    background-color:  #FFCF26;
+}
+
+/* Radio */
+
+.radio-container + .radio-container{
+    margin-top: 16px;
+}
+
+.radio-container{
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+} 
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 1px solid #777777;
+}
+
+.container input:hover ~ .checkmark {
+    background-color: #FFE074;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container input:checked ~ .radio-title {
+    font-weight: 500;
+}
+
+
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: black;
+    transform: translate(-50%, -50%);
+  }
+
+  /* When the radio button is checked, add a background */
+.container input:checked ~ .checkmark {
+    background-color: #FFE074;
+  }
+
+  /* Checkbox */
+
+  
+.check-container{
+    margin-top: 16px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 1px solid #777777;
+    border-radius: 2px;
+}
+
+.check-title{
+    margin-left: 30px;
+}
+
+.check-container:hover input ~ .checkmark-box {
+    background-color: #FFE074;
+}
+
+.container input:checked ~ .checkmark-box {
+    background-color: #FFE074;
+}
+
+.checkmark-box:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-container input:checked ~ .checkmark-box:after {
+    display: block;
+}
+
+.checkmark-box::after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+    background-image: url('./../img/check.svg');
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: center;
+}
+
+.hidden-elements {
+    margin-top: 16px;
+    display: none;
+}
+.check-show-more {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4290C9;
+    cursor: pointer;
+}
+
+
+.toggle-container{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toggle-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.toggle-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 37px;
+    background-color: #C4C4C4;
+    border: 1px solid #777777;
+    border-radius: 10px;
+}
+
+.toggle-title{
+    margin-left: 47px;
+}
