@@ -136,16 +136,19 @@ body {
 
 .card_address {
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 16.41px;
     color: #777777;
 }
 
 .img_cp {
-    display: inline-block;
-    vertical-align: bottom;
+    /* display: inline-block;
+    vertical-align: bottom; */
 }
 
 .show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 80px;
     background: #E5E5E5;
@@ -162,7 +165,7 @@ body {
 /* Sidebar */
 
 .widget + .widget{
-    margin-top: 30px;
+    margin-top: 31.5px;
 }
 
 .widget_title {
@@ -171,7 +174,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 21.2px;
 }
 
 .widget_title::after {
@@ -179,7 +182,7 @@ body {
     width: 20px;
     height: 20px;
     position: absolute;
-    right: 0;
+    right: 1px;
     top: 0;
     background-image: url('./../img/chevron-up.svg');
     background-repeat: no-repeat;
@@ -198,11 +201,13 @@ body {
 
 .distance-group:first-child{
     border-radius: 4px 4px 0px 0px;
+    height: 50px;
 }
 
 .distance-group:last-child{
     border-radius: 0px 0px 4px 4px;
     border-top: none;
+    height: 50px;
 }
 
 .distance-btn{
@@ -273,7 +278,7 @@ body {
     border: 1px solid #777777;
 }
 
-.container input:hover ~ .checkmark {
+.radio-container input:hover ~ .checkmark {
     background-color: #FFE074;
 }
 
@@ -285,17 +290,17 @@ body {
   }
   
   /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
+.radio-container input:checked ~ .checkmark:after {
     display: block;
 }
 
-.container input:checked ~ .radio-title {
+.radio-container input:checked ~ .radio-title {
     font-weight: 500;
 }
 
 
   /* Style the indicator (dot/circle) */
-  .container .checkmark:after {
+  .radio-container .checkmark:after {
     top: 50%;
     left: 50%;
     width: 8px;
@@ -306,7 +311,7 @@ body {
   }
 
   /* When the radio button is checked, add a background */
-.container input:checked ~ .checkmark {
+  .radio-container input:checked ~ .checkmark {
     background-color: #FFE074;
   }
 
@@ -421,6 +426,61 @@ body {
     border-radius: 10px;
 }
 
+.toggle-box::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: #3C3C3C;
+}
+
+.toggle-container input:checked ~.toggle-box::before {
+    left: 19px;
+}
+
+.toggle-container input:checked ~.toggle-box {
+    background-color: #FFE074;
+}
+
 .toggle-title{
     margin-left: 47px;
+}
+.btn-apply, .btn-reset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width: 270px;
+    height: 50px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #D6D6D6;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.btn-apply {
+    background-color: #FFCF26;
+}
+
+.btn-apply:hover {
+    background-color: #e1ee2a;
+}
+
+.btn-reset {
+    margin-top: 10px;
+}
+
+.btn-reset:hover {
+    background-color: grey;
+}
+
+.btn-reset img{
+    display: inline-block;
+    vertical-align: middle;
 }

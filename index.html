@@ -288,117 +288,132 @@
                 </button>
             </main>
             <aside class="sidebar">
-                <div class="widget">                    
-                    <div class="widget_title">
-                        Близость к метро
+                <form>
+                    <div class="widget">                    
+                        <div class="widget_title">
+                            Близость к метро
+                        </div>
+                        <div class="widget_body">
+                            <div class="distance">
+                                <div class="distance-group">
+    
+                                        <input type="checkbox" id="distance-check-01" class="distance-checkbox">
+                                        <label class="distance-btn" for="distance-check-01">&lt; 10</label>
+                                        <input type="checkbox" id="distance-check-02" class="distance-checkbox">
+                                        <label class="distance-btn" for="distance-check-02">10 - 20</label>
+                                        <input type="checkbox" id="distance-check-03" class="distance-checkbox">
+                                        <label class="distance-btn "for="distance-check-03">20 - 30</label>
+                                        <input type="checkbox" id="distance-check-04" class="distance-checkbox">
+                                        <label class="distance-btn" for="distance-check-04">30 +</label>
+                                </div>
+                                <div class="distance-group">
+                                        <input type="checkbox" id="distance-check-05" class="distance-checkbox">
+                                        <label class="distance-btn" for="distance-check-05">Any</label>
+                                </div>
+                            </div>   
+                        </div>
                     </div>
-                    <div class="widget_body">
-                        <div class="distance">
-                            <div class="distance-group">
-  
-                                    <input type="checkbox" id="distance-check-01" class="distance-checkbox">
-                                    <label class="distance-btn" for="distance-check-01">&lt; 10</label>
-                                    <input type="checkbox" id="distance-check-02" class="distance-checkbox">
-                                    <label class="distance-btn" for="distance-check-02">10 - 20</label>
-                                    <input type="checkbox" id="distance-check-03" class="distance-checkbox">
-                                    <label class="distance-btn "for="distance-check-03">20 - 30</label>
-                                    <input type="checkbox" id="distance-check-04" class="distance-checkbox">
-                                    <label class="distance-btn" for="distance-check-04">30 +</label>
-                            </div>
-                            <div class="distance-group">
-                                    <input type="checkbox" id="distance-check-05" class="distance-checkbox">
-                                    <label class="distance-btn" for="distance-check-05">Any</label>
-                            </div>
-                        </div>   
+                    <div class="widget">                    
+                        <div class="widget_title">
+                            Срок сдачи
+                        </div>
+                        <div class="widget_body">
+                            <label  class="radio-container">
+                                <input type="radio" name="termin" checked>
+                                <span class="checkmark"></span>
+                                <span class="radio-title">Любой</span>
+                            </label>
+                            <label  class="radio-container" >
+                                <input type="radio" name="termin">
+                                <span class="checkmark"></span> 
+                                <span class="radio-title">Сдан</span>
+                            </label>
+                            <label  class="radio-container" >
+                                <input type="radio" name="termin">
+                                <span class="checkmark"></span> 
+                                <span class="radio-title">В этом году</span>
+                            </label>
+                            <label  class="radio-container" >
+                                <input type="radio" name="termin"> 
+                                <span class="checkmark"></span>
+                                <span class="radio-title">В следующем году</span>
+                            </label>
+                            
+                        </div>
                     </div>
-                </div>
-                <div class="widget">                    
-                    <div class="widget_title">
-                        Срок сдачи
-                    </div>
-                    <div class="widget_body">
-                        <label  class="radio-container">
-                            <input type="radio" name="termin" checked>
-                            <span class="checkmark"></span>
-                            <span class="radio-title">Любой</span>
-                        </label>
-                        <label  class="radio-container" >
-                            <input type="radio" name="termin">
-                            <span class="checkmark"></span> 
-                            <span class="radio-title">Сдан</span>
-                        </label>
-                        <label  class="radio-container" >
-                            <input type="radio" name="termin">
-                            <span class="checkmark"></span> 
-                            <span class="radio-title">В этом году</span>
-                        </label>
-                        <label  class="radio-container" >
-                            <input type="radio" name="termin"> 
-                            <span class="checkmark"></span>
-                            <span class="radio-title">В следующем году</span>
-                        </label>
-                           
-                    </div>
-                </div>
-                <div class="widget">                    
-                    <div class="widget_title">
-                        Дополнительные опции
-                    </div>
-                    <div class="widget_body">
-                        <label  class="check-container">
-                            <input type="checkbox" name="without-cars" checked>
-                            <span class="checkmark-box"></span>
-                            <span class="check-title">Двор без машин</span>
-                        </label>
-                        <label  class="check-container">
-                            <input type="checkbox" name="high-ceiling">
-                            <span class="checkmark-box"></span>
-                            <span class="check-title">Высокие потолки</span>
-                        </label>
-                        <label  class="check-container">
-                            <input type="checkbox" name="panoramic-windows">
-                            <span class="checkmark-box"></span>
-                            <span class="check-title">Панорамные окна</span>
-                        </label>
-                        <label  class="check-container">
-                            <input type="checkbox" name="pantry">
-                            <span class="checkmark-box"></span>
-                            <span class="check-title">Есть кладовые</span>
-                        </label>
-                        <label  class="check-container">
-                            <input type="checkbox" name="low-rise">
-                            <span class="checkmark-box"></span>
-                            <span class="check-title">Малоэтажный</span>
-                        </label>
-                        <div class="hidden-elements">
+                    <div class="widget">                    
+                        <div class="widget_title">
+                            Дополнительные опции
+                        </div>
+                        <div class="widget_body">
                             <label  class="check-container">
-                                <input type="checkbox" name="hid-1-value">
+                                <input type="checkbox" name="without-cars" checked>
                                 <span class="checkmark-box"></span>
-                                <span class="check-title">Hid-1</span>
+                                <span class="check-title">Двор без машин</span>
                             </label>
                             <label  class="check-container">
-                                <input type="checkbox" name="hid-2-value">
+                                <input type="checkbox" name="high-ceiling">
                                 <span class="checkmark-box"></span>
-                                <span class="check-title">Hid-2</span>
+                                <span class="check-title">Высокие потолки</span>
                             </label>
                             <label  class="check-container">
-                                <input type="checkbox" name="hid-3-value">
+                                <input type="checkbox" name="panoramic-windows">
                                 <span class="checkmark-box"></span>
-                                <span class="check-title">Hid-3</span>
+                                <span class="check-title">Панорамные окна</span>
                             </label>
-                        </div>                        
-                        <button class="check-show-more">Показать еще</button>
+                            <label  class="check-container">
+                                <input type="checkbox" name="pantry">
+                                <span class="checkmark-box"></span>
+                                <span class="check-title">Есть кладовые</span>
+                            </label>
+                            <label  class="check-container">
+                                <input type="checkbox" name="low-rise">
+                                <span class="checkmark-box"></span>
+                                <span class="check-title">Малоэтажный</span>
+                            </label>
+                            <div class="hidden-elements">
+                                <label  class="check-container">
+                                    <input type="checkbox" name="hid-1-value">
+                                    <span class="checkmark-box"></span>
+                                    <span class="check-title">Hid-1</span>
+                                </label>
+                                <label  class="check-container">
+                                    <input type="checkbox" name="hid-2-value">
+                                    <span class="checkmark-box"></span>
+                                    <span class="check-title">Hid-2</span>
+                                </label>
+                                <label  class="check-container">
+                                    <input type="checkbox" name="hid-3-value">
+                                    <span class="checkmark-box"></span>
+                                    <span class="check-title">Hid-3</span>
+                                </label>
+                            </div>                        
+                            <button class="check-show-more"><span>Показать еще</span></button>
+                        </div>
                     </div>
-                </div>
-                <div class="widget">                    
+                    <div class="widget">                    
                     <div class="widget_body">
                         <label  class="toggle-container">
-                            <input type="checkbox"  checked="checked">
+                            <input type="checkbox" name="services" checked="checked">
                             <span class="toggle-box"></span>
                             <span class="toggle-title">Услуги 0%</span>
                         </label>
                     </div>                        
-                </div>
+                
+                
+                    </div>
+                    <div class="widget">                    
+                        <div class="widget_body">
+                            <button class="btn-apply">
+                                Применить фильтры
+                            </button>
+                            <button class="btn-reset">
+                                <img src="./img/x.svg" alt="Сбросить фильтры">
+                                Сбросить фильтры
+                            </button>
+                        </div>   
+                    </div>
+                </form>
             </aside>
         </div>
     </div>
